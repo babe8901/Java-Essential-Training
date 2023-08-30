@@ -12,6 +12,7 @@ public class QualifyForLoan {
         salary = scanner.nextDouble();
         System.out.println("Enter the duration in years at your current job:");
         years = scanner.nextInt();
+        scanner.close();
 
         if (salary >= requiredSalary && years >= requiredYearsEmployed) {
             System.out.println("Congrats! You qualify for the loan");

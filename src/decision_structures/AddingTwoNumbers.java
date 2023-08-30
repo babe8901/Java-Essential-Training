@@ -13,6 +13,7 @@ public class AddingTwoNumbers {
         secondNumber = scanner.nextFloat();
         System.out.println("Enter the operation[+,-,*,/,%]:");
         operation = scanner.next().charAt(0);
+        scanner.close();
 
         result = switch(operation) {
             case '+' -> {
