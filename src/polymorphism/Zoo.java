@@ -5,6 +5,7 @@ public class Zoo {
         Dog rocky = new Dog();
         rocky.fetch();
         rocky.makeSound();
+        feed(rocky);
 
         Animal sasha = new Dog();
         sasha.makeSound();
@@ -12,5 +13,19 @@ public class Zoo {
         sasha = new Cat();
         sasha.makeSound();
         ((Cat)sasha).scratch();
+        feed(sasha);
+
+        if (sasha instanceof Cat sashaTheCat) {
+            sashaTheCat.makeSound();
+        }
+    }
+
+    public static void feed(Animal animal) {
+        if (animal instanceof Dog) {
+            System.out.println("here's your dog food");
+        }
+        else if (animal instanceof Cat) {
+            System.out.println("here's your cat food");
+        }
     }
 }
