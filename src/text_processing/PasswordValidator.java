@@ -45,7 +45,7 @@ public class PasswordValidator {
 
         if (newPassword.matches("[a-zA-Z0-9]*")) {
             valid = false;
-            errorMessage += "\n Your password must include a special character (e.g. %,$[:).";
+            errorMessage += "\nYour password must include a special character (e.g. %,$[:).";
         }
 
         if (newPassword.toUpperCase().contains(currentUsername.toUpperCase())) {
