@@ -29,7 +29,7 @@ public class Rectangle {
         this.sides = sides;
     }
 
-    public double calculatePerimeter() {
+    protected double calculatePerimeter() {
         return 2 * (length + width);
     }
 
