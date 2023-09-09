@@ -2,7 +2,7 @@ package functional_interfaces;
 
 import java.util.function.Consumer;
 
-public class TestConsumer {
+public class TestConsumerInterface {
     public static void main(String[] args) {
         Consumer<String> print = System.out::println;
         Consumer<String> bye = c -> System.out.println("Bye");
